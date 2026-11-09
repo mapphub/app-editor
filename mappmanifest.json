@@ -2,10 +2,10 @@
   "id": "editor",
   "name": "Редактор",
   "version": "0.1.0",
-  "author": "mapphub",
-  "description": "Редактор data-файлов",
+  "description": "Редактор файлов мини-приложений",
   "icon": "icon.svg",
-  "permissions": ["fs"],
+  "author": "mapphub",
   "web": false,
+  "permissions": ["fs"],
   "routes": { "root": "/", "app": "/index.html" }
 }

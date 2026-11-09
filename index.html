@@ -1,9 +1,15 @@
 <!DOCTYPE html>
-<html lang="ru"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Редактор</title><link rel="stylesheet" href="./style.css"/></head><body>
-<main class="page"><h1>Редактор</h1>
-<input id="path" value="notes.txt"/>
-<textarea id="body" rows="12" style="width:100%;margin:8px 0"></textarea>
-<button id="load">Открыть</button> <button id="save">Сохранить</button>
-<pre id="log"></pre></main>
-<script src="./miniapps-bridge.js"></script><script src="./app.js"></script>
-</body></html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
+  <title>Редактор</title>
+  <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+  <div id="app"></div>
+  <script src="./miniapps-bridge.js"></script>
+  <script src="./common.js"></script>
+  <script type="module" src="./edit.js"></script>
+</body>
+</html>
