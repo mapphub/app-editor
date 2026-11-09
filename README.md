@@ -1,2 +1,3 @@
-# app-editor
-Official App Editor mini-app
+# Редактор
+
+Файлы data-области через MiniApps.fs. Без +server.js.

@@ -1,0 +1,11 @@
+{
+  "id": "editor",
+  "name": "Редактор",
+  "version": "0.1.0",
+  "author": "mapphub",
+  "description": "Редактор data-файлов",
+  "icon": "icon.svg",
+  "permissions": ["fs"],
+  "web": false,
+  "routes": { "root": "/", "app": "/index.html" }
+}
