@@ -1,0 +1,12 @@
+{
+  "id": "editor",
+  "name": "Редактор",
+  "version": "0.3.0",
+  "description": "Создание и правка мини-приложений",
+  "icon": "icon.svg",
+  "routes": { "root": "public", "app": "public", "client": "public" },
+  "server": { "host": true, "client": false, "network": false },
+  "permissions": ["apps", "apps.read", "apps.write", "apps.manage", "shell"],
+  "tags": ["tools", "official"],
+  "author": "mapphub"
+}
