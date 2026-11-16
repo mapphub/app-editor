@@ -10,6 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.ORG_ADMIN_TOKEN }}
 
       - name: Read version
         id: ver
@@ -26,7 +28,7 @@ jobs:
       - name: Skip if version already released
         id: skip
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.ORG_ADMIN_TOKEN }}
         run: |
           set -euo pipefail
           VER="${{ steps.ver.outputs.version }}"
@@ -56,7 +58,7 @@ jobs:
           files: app.zip
           make_latest: true
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.ORG_ADMIN_TOKEN }}
 
       - name: Update catalog.json on portal
         if: steps.skip.outputs.skip != 'true'
